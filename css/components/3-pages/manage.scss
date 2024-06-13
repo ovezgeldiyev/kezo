@@ -1,0 +1,225 @@
+.manage {
+  padding-bottom: 30px;
+  &__inner {
+    &-title {
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-col {
+      background-color: $white;
+      border-radius: 16px;
+      padding: 12px;
+    }
+  }
+  &Item {
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #f8fafb;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:last-child {
+      margin: 0;
+    }
+    &__content {
+      display: flex;
+      align-items: center;
+    }
+    &__icon {
+      width: 56px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+      box-shadow: 0px 2.6988px 9.44578px rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    &__email {
+      display: flex;
+      align-items: center;
+      span {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        color: #272835;
+      }
+    }
+    &__buttons {
+      display: flex;
+      .button {
+        margin-right: 12px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    &__add {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      cursor: pointer;
+      transition: 0.3s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+      span {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        color: $primary;
+        font-weight: 500;
+
+        b {
+          position: relative;
+          padding-right: 14px;
+          &::before {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            content: "";
+            background-color: $red;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+    h2 {
+      margin-bottom: 4px;
+    }
+  }
+}
+// 1380px
+@mixin manage-xxxlg-xxxxlg {
+  .manage {
+  }
+}
+// 1250px
+@mixin manage-xlg-xxlg-extra {
+  .manage {
+  }
+}
+// 1180px
+@mixin manage-xlg-xxlg {
+  .manage {
+  }
+}
+// 1024px
+@mixin manage-lg-xlg {
+  .manage {
+  }
+}
+// 930px
+@mixin manage-md-lg {
+  .manage {
+    &__inner {
+      &-title {
+        margin-bottom:20px;
+      }
+    }
+    &Item {
+      padding: 12px;
+      &__icon {
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+      }
+      &__name {
+        width: calc(100% - 54px);
+      }
+      &__add {
+        span {
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+        }
+      }
+      &__email {
+        span {
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+
+        }
+      }
+      h2 {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+// 750px
+@mixin manage-sm-md {
+  .manage {
+    &Item {
+      flex-direction: column;
+      &__content {
+        width: 100%;
+        margin-bottom: 12px;
+      }
+      &__buttons {
+        width: 100%;
+        justify-content:flex-end;
+      }
+    }
+  }
+}
+// 650px
+@mixin manage-sm-md-extra {
+  .manage {
+  }
+}
+// 540px
+@mixin manage-xsm-sm {
+  .manage {
+  padding-bottom: 20px;
+
+    &__inner {
+      &-title {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      &-col {
+        padding: 8px;
+        border-radius: 12px;
+      }
+      h1 {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+    &Item {
+      border-radius: 8px;
+    }
+  }
+}
+// 440px
+@mixin manage-xxsm-xsm {
+  .manage {
+  }
+}

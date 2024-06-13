@@ -1,0 +1,216 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include status-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  @include status-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include status-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  h1 {
+    font-size: 40px;
+  }
+  @include status-xlg-xxlg;
+  @include intro-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .auto__container {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .main {
+    padding-top: 80px;
+  }
+  .user {
+    position: static;
+    &Dropdown {
+      top: calc(100% + 6px);
+      right: 0;
+    }
+  }
+  .location {
+    padding: 6px 10px;
+    &__icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 6px;
+    }
+    p {
+        width: calc(100% - 20px);
+        font-size: 10px;
+    }
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include status-lg-xlg;
+}
+// 930px
+@include md-lg {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    &.big {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .button {
+    font-size: 12px;
+    line-height: 16px;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  }
+  .check {
+    &__box {
+      width: 20px;
+      height: 20px;
+      margin-right: 6px;
+      input {
+        width: 14px;
+        height: 14px;
+      }
+      span {
+        width: 14px;
+        height: 14px;
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  @include status-md-lg;
+  @include manage-md-lg;
+  @include intro-md-lg;
+}
+// 750px
+@include sm-md {
+  @include status-sm-md;
+  @include manage-sm-md;
+  @include intro-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  @include status-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .location {
+    display: none;
+  }
+  @include header-xsm-sm;
+  @include status-xsm-sm;
+  @include manage-xsm-sm;
+  @include intro-xsm-sm;
+  @include footer-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  .modall {
+    padding: 15px;
+    &__inner {
+      padding: 20px;
+      border-radius: 12px;
+      &-title {
+        margin-bottom: 20px;
+      }
+      &-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 16px;
+        button {
+          width: 36px;
+          height: 36px;
+          &.center {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+      .button {
+        &__row {
+          .button {
+            width: calc(50% - 6px);
+          }
+        }
+      }
+    }
+    &Form {
+      padding-top: 16px;
+      .input {
+        &__outer {
+          margin-bottom: 12px;
+        }
+      }
+      &__main {
+        &-row {
+          flex-direction: column;
+          margin-bottom: 12px;
+
+          .input {
+            &__outer {
+              width: 100%;
+              max-width: unset;
+            }
+          }
+        }
+      }
+      &__foot {
+        padding-top: 16px;
+      }
+    }
+  }
+  .user {
+    &Dropdown {
+      padding: 6px;
+      &__content {
+        padding: 4px 6px 4px 6px;
+      }
+      &__icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+      }
+      p {
+        line-height: 16px;
+      }
+    }
+  }
+  .logout {
+    padding: 10px 10px 8px;
+  }
+  @include status-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  .auto__container {
+    padding: 0 16px;
+  }
+  // @include status-xxxsm-xxsm;
+}

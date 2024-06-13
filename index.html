@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <!-- header start
+    =========================================== -->
+  <header class="header" id="header">
+    <div class="auto__container">
+      <div class="header__inner">
+        <div class="header__inner-bg">
+        </div>
+        <div class="header__inner-main">
+          <div class="header__inner-logo">
+            <img src="./images/logo.png" alt="" />
+          </div>
+        </div>
+        <div class="header__inner-side">
+          <nav class="nav" id="menu">
+            <ul class="nav__inner">
+              <li>
+                <a href="#" class="active">
+                  Status
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Calendar
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Manage Cities
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__inner-buttons">
+            <div class="user">
+              <button class="userBtn">
+                <span>
+                  <img src="./images/icons/user.svg" alt="">
+                </span>
+              </button>
+              <div class="userDropdown">
+                <div class="userDropdown__content">
+                  <div class="userDropdown__icon">
+                    <img src="./images/icons/user.svg" alt="">
+                  </div>
+                  <div class="userDropdown__name">
+                    <p>
+                      Admin Name
+                    </p>
+                    <a href="#">
+                      sampleemail@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <button class="logout modallBtn" data-tab="#modal-1">
+                  <span>
+                    <img src="./images/icons/logout.svg" alt="">
+                  </span>
+                  <p>
+                    Log out
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div class="burger" id="menuBtn">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end
+    =========================================== -->
+  <main class="main">
+    <div class="main__bg">
+      <img src="./images/blur.png" alt="">
+    </div>
+    <!-- status start
+    =========================================== -->
+    <section class="status">
+      <div class="auto__container">
+        <div class="status__inner">
+          <div class="status__inner-title">
+            <h1>
+              Status
+            </h1>
+          </div>
+          <div class="status__inner-list">
+            <div class="statusItem">
+              <div class="statusItem__row">
+                <div class="statusItem__content">
+                  <div class="statusItem__icon">
+                    <img src="./images/icons/orange.svg" alt="">
+                  </div>
+                  <div class="statusItem__name">
+                    <h2>
+                      City C Name
+                    </h2>
+                    <p>
+                      No Feedback Available
+                    </p>
+                  </div>
+                </div>
+                <div class="statusItem__links">
+                  <button class="button share">
+                    <svg>
+                      <use xlink:href="#share"></use>
+                    </svg>
+                    Share Link
+                  </button>
+                  <p>
+                    Last Shared: 11 Nov 2023 on 3:32 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="statusItem">
+              <div class="statusItem__row">
+                <div class="statusItem__content">
+                  <div class="statusItem__icon">
+                    <img src="./images/icons/orange.svg" alt="">
+                  </div>
+                  <div class="statusItem__name">
+                    <h2>
+                      City C Name
+                    </h2>
+                    <p class="active">
+                      Feedback Available to Review
+                    </p>
+                  </div>
+                </div>
+                <div class="statusItem__links">
+                  <button class="button share">
+                    <svg>
+                      <use xlink:href="#share"></use>
+                    </svg>
+                    Share Link
+                  </button>
+                  <p>
+                    Last Shared: 11 Nov 2023 on 3:32 PM
+                  </p>
+                </div>
+              </div>
+              <div class="statusItem__row big">
+                <div class="statusItem__note">
+                  <span>
+                    <img src="./images/icons/message.svg" alt="">
+                  </span>
+                  <p class="big">
+                    Paper collection should be on Tuesday
+                  </p>
+                </div>
+                <div class="statusItem__view">
+                  <p>
+                    11 Nov 2023 on 3:32 PM
+                  </p>
+                  <button class="button view">
+                    <svg>
+                      <use xlink:href="#chevron-top"></use>
+                    </svg>
+                    View Less
+                  </button>
+                </div>
+              </div>
+              <div class="statusItem__feed">
+                <h6>
+                  Feedbacks
+                </h6>
+                <div class="statusItem__feed-row">
+                  <p class="big">
+                    <span>
+                      <img src="./images/icons/feedback.svg" alt="">
+                    </span>
+                    Feedback Example no. 1
+                  </p>
+                  <p>
+                    11 Nov 2023 on 3:32 PM
+                  </p>
+                </div>
+                <div class="statusItem__feed-row">
+                  <p class="big">
+                    <span>
+                      <img src="./images/icons/feedback.svg" alt="">
+                    </span>
+                    Feedback Example no. 2
+                  </p>
+                  <p>
+                    11 Nov 2023 on 3:32 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="statusItem">
+              <div class="statusItem__row">
+                <div class="statusItem__content">
+                  <div class="statusItem__icon">
+                    <img src="./images/icons/green.svg" alt="">
+                  </div>
+                  <div class="statusItem__name">
+                    <h2>
+                      City A Name
+                    </h2>
+                    <p>
+                      No Feedback Available
+                    </p>
+                  </div>
+                </div>
+                <div class="statusItem__links">
+                  <button class="button share">
+                    <svg>
+                      <use xlink:href="#share"></use>
+                    </svg>
+                    Share Link
+                  </button>
+                  <p>
+                    Last Shared: 11 Nov 2023 on 3:32 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="statusItem">
+              <div class="statusItem__row">
+                <div class="statusItem__content">
+                  <div class="statusItem__icon">
+                    <img src="./images/icons/green.svg" alt="">
+                  </div>
+                  <div class="statusItem__name">
+                    <h2>
+                      City B Name
+                    </h2>
+                    <p class="active">
+                      Feedback Available to Review
+                    </p>
+                  </div>
+                </div>
+                <div class="statusItem__links">
+                  <button class="button share">
+                    <svg>
+                      <use xlink:href="#share"></use>
+                    </svg>
+                    Share Link
+                  </button>
+                  <p>
+                    Last Shared: 11 Nov 2023 on 3:32 PM
+                  </p>
+                </div>
+              </div>
+              <div class="statusItem__row big">
+                <div class="statusItem__note">
+                  <span>
+                    <img src="./images/icons/message.svg" alt="">
+                  </span>
+                  <p class="big">
+                    Paper collection should be on Tuesday
+                  </p>
+                </div>
+                <div class="statusItem__view">
+                  <p>
+                    11 Nov 2023 on 3:32 PM
+                  </p>
+                  <button class="button view">
+                    <svg>
+                      <use xlink:href="#chevron-top"></use>
+                    </svg>
+                    View Less
+                  </button>
+                </div>
+              </div>
+              <div class="statusItem__feed">
+                <h6>
+                  Feedbacks
+                </h6>
+                <div class="statusItem__feed-row">
+                  <p class="big">
+                    <span>
+                      <img src="./images/icons/feedback.svg" alt="">
+                    </span>
+                    Feedback Example no. 1
+                  </p>
+                  <p>
+                    11 Nov 2023 on 3:32 PM
+                  </p>
+                </div>
+                <div class="statusItem__feed-row">
+                  <p class="big">
+                    <span>
+                      <img src="./images/icons/feedback.svg" alt="">
+                    </span>
+                    Feedback Example no. 2
+                  </p>
+                  <p>
+                    11 Nov 2023 on 3:32 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- status end
+    =========================================== -->
+    <!-- footer start
+    =========================================== -->
+    <footer class="footer">
+      <div class="auto__container">
+        <div class="footer__inner">
+          <p>
+            Copyright KEZO - 2023
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end
+    =========================================== -->
+    <div class="modall" id="modal-1">
+      <div class="modall__inner">
+        <div class="modallClose" data-modal="modal-1">
+        </div>
+        <div class="modall__inner-icon">
+          <img src="./images/icons/red.svg" alt="">
+          <button>
+            <img src="./images/icons/notif-orange.svg" alt="">
+          </button>
+        </div>
+        <div class="modall__inner-title">
+          <h2>
+            Are You Sure to Delete [City Name]
+          </h2>
+          <p>
+            Are You Sure to Delete [City Name]? Confirming this step is crucial for maintaining accurate records.
+          </p>
+        </div>
+        <div class="button__row">
+          <a href="#" class="button secondary">
+            Cancel
+          </a>
+          <a href="#" class="button red">
+            Delete City
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sprites
+    =========================================== -->
+  <!-- <svg>
+      <use xlink:href="#voice"></use>
+    </svg> -->
+  <svg style="display: none">
+    <symbol id="share" viewBox="0 0 20 20">
+      <g>
+        <path
+          d="M6.80802 9.25708C6.64677 8.96607 6.39375 8.737 6.08866 8.60583C5.78357 8.47466 5.4437 8.44882 5.12238 8.53236C4.80107 8.6159 4.51651 8.80409 4.31336 9.06739C4.11022 9.33069 4 9.6542 4 9.98714C4 10.3201 4.11022 10.6436 4.31336 10.9069C4.51651 11.1702 4.80107 11.3584 5.12238 11.4419C5.4437 11.5255 5.78357 11.4996 6.08866 11.3684C6.39375 11.2373 6.64677 11.0082 6.80802 10.7172M6.80802 9.25708C6.92788 9.47349 6.99648 9.72197 6.99648 9.98714C6.99648 10.2523 6.92788 10.5014 6.80802 10.7172M6.80802 9.25708L13.1783 5.70766M6.80802 10.7172L13.1783 14.2666M13.1783 5.70766C13.2717 5.88409 13.3992 6.04007 13.5534 6.16649C13.7076 6.29291 13.8854 6.38722 14.0764 6.44392C14.2674 6.50061 14.4677 6.51855 14.6656 6.49669C14.8636 6.47483 15.0552 6.41361 15.2293 6.3166C15.4034 6.21959 15.5565 6.08874 15.6796 5.9317C15.8027 5.77466 15.8933 5.59459 15.9462 5.402C15.9991 5.20942 16.0132 5.00819 15.9876 4.81009C15.9621 4.61198 15.8974 4.42097 15.7974 4.24822C15.6003 3.9078 15.278 3.65852 14.8996 3.55398C14.5212 3.44943 14.1171 3.49796 13.774 3.68913C13.4309 3.8803 13.1763 4.19885 13.0649 4.57631C12.9535 4.95376 12.9942 5.35999 13.1783 5.70766ZM13.1783 14.2666C13.0827 14.4392 13.022 14.629 12.9995 14.8251C12.977 15.0212 12.9933 15.2199 13.0474 15.4097C13.1015 15.5995 13.1923 15.7768 13.3147 15.9314C13.4371 16.086 13.5886 16.215 13.7607 16.3108C13.9327 16.4067 14.1219 16.4676 14.3175 16.4902C14.513 16.5127 14.7111 16.4964 14.9003 16.4421C15.0896 16.3879 15.2663 16.2968 15.4205 16.1741C15.5746 16.0513 15.7032 15.8993 15.7987 15.7267C15.9918 15.3782 16.0389 14.967 15.9297 14.5836C15.8204 14.2003 15.5639 13.8761 15.2164 13.6825C14.8689 13.4889 14.4589 13.4416 14.0767 13.5512C13.6945 13.6607 13.3713 13.9181 13.1783 14.2666Z"
+          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      </g>
+    </symbol>
+    <symbol id="chevron-top" viewBox="0 0 20 20">
+      <g>
+        <path d="M15 12L10 7L5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" fill="none" />
+      </g>
+    </symbol>
+  </svg>
+  <!-- js
+    =========================================== -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
